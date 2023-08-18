@@ -14,19 +14,39 @@
     <link rel="stylesheet" href="../CSS/stayle.css" />
   </head>
   <body>
-    <section class="block block--dark block--skewed-left hero">
-      <div class="grid grid--1x2 container">
-        <header class="block__header hero__content">
-          <h2 class="block__heading">Cloud Hosting For Pros</h2>
-          <p class="hero__tagline">
-            Deploy your website in less than 60 seconds.
-          </p>
-
-          <a href="#" class="btn btn--accent btn--stretched">Get Started </a>
-        </header>
-
-        <img class="hero__image" src="../images/banner.png" alt="banner" />
+    <div class="container block domain">
+      <header class="block__header">
+        <h2>The Best Web Hosting starting at per month</h2>
+      </header>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse,
+        dignissimos deleniti facilis blanditiis culpa doloribus eum velit modi
+        repellendus quia.
+      </p>
+      <div class="input-group domain__input">
+        <input type="text" class="input" placeholder="Enter domain name here" />
+        <button class="btn btn--accent btn--stretched domain__button">
+          <svg class="icon icon--white icon__search">
+            <use xlink:href="../images/sprite.svg#search"></use>
+          </svg>
+          Search
+        </button>
       </div>
-    </section>
+
+      <div class="price__list">
+        <ul class="list block-domain__list">
+          <li class="domain__item">.com $9.26</li>
+          <li class="domain__item">
+            <span class="badge badge--secondary">.sg $7.91</span>
+          </li>
+          <li class="domain__item">.space $12.98</li>
+          <li class="domain__item">.info $14.15</li>
+          <li class="domain__item">.net $16.15</li>
+          <li class="domain__item">.xyz $10.15</li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="../js/main.js"></script>
   </body>
 </html>
