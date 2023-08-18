@@ -256,6 +256,13 @@ a{
     padding-right: 6rem;
  }
 
+ .btn .icon {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    vertical-align: middle;
+ }
+
  @media screen and (min-width: 1024px) {
     .btn{
         font-size: 1.5rem;
@@ -716,5 +723,46 @@ a{
     
  }
 
+ /* domain */
 
 
+
+
+
+
+
+.domain__input {
+    border-radius: 60px;
+    margin-top: 4rem;
+    box-shadow: 0 0 30px 20px #e6ebee;
+    border: 0;
+}
+
+.block-domain__list {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,6rem);
+    justify-items: center;
+    font-size: 2rem;
+    font-weight: 600;
+    
+ 
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .block-domain__list {
+        grid-template-columns: repeat(auto-fit, minmax(100px , 1fr));
+        
+        max-width: 700px;
+        margin: 3rem auto;
+        
+    }
+
+    .domain__input {
+        
+        max-width: 700px;
+        margin: 3rem auto;
+    }
+}
