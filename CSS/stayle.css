@@ -362,7 +362,10 @@ a{
   .plan .list__item {
     margin-bottom: 2rem;
   }
-  
+  .plan--popular{
+    transform: scale(1.1);
+
+  }
   .plan--popular .card__header {
     position: relative;
   }
@@ -375,6 +378,15 @@ a{
     top: -6px;
     right: 5%;
   }
+.plan{
+    transition: transform .2s ease-out;
+}
+.plan:hover {
+    transform: scale(1.05);
+  }
+.plan--popular:hover{
+    transform: scale(1.15);
+}
 
   /* Media */
 
@@ -766,3 +778,28 @@ a{
         margin: 3rem auto;
     }
 }
+
+
+/* Plan-Block */
+
+.block-plan .grid {
+    gap: 4rem;
+    justify-content: center;
+    align-content: center;
+    margin: 4rem auto;
+    
+}
+
+.block-plan .card
+{
+    max-width: 500px;
+    align-self: center;
+    transition: transform .3s;
+}
+
+.block-plan .grid:hover {
+    row-gap: 6rem;
+}
+
+
+
